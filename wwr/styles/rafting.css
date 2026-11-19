@@ -14,8 +14,10 @@
 }
 
 header {
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 8px 16px;
 }
 
 body {
@@ -108,6 +110,8 @@ section h2 {
 
 .d-flex {
   display: flex;
+  gap: 12px;
+  justify-content: center;
 }
 
 .flex-wrap {
@@ -115,7 +119,7 @@ section h2 {
 }
 
 figure {
-  margin: 30px 0 10px 10px;
+  margin: 0;
 }
 
 figure img {
@@ -127,4 +131,21 @@ figcaption {
   font-size: 0.9rem;
   text-align: center;
   max-width: 150px;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header nav a {
+  color: var(--accent2-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: var(--secondary-color);
 }
