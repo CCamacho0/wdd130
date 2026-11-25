@@ -269,10 +269,6 @@ header nav a:hover {
   object-fit: cover;
 }
 
-.staff figcaption {
-  margin: 4px auto 0;
-}
-
 .employee-img {
   width: 100px;
   height: 100px;
